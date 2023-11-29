@@ -1,7 +1,7 @@
 // `data` is the data you encrypted and passed into `evervault.run` from your server. The Function
 // automatically decrypts the data and maintains its structure so you can treat event exactly as
 // you did when you passed it into `evervault.run`.
-export default async function handler(data: any, context: any) {
+export async function handler(data: any, context: any) {
   // Check if the data sent into the Function included the `name` key
   if (data.name && typeof data.name === "string") {
     console.debug(
