@@ -1,4 +1,4 @@
 [function]
 name = "hello-function"
 language = "node@18"
-handler = "dist/foo.handler"
+handler = "index.handler"
